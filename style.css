@@ -1,0 +1,32 @@
+/*
+    Global rules
+*/
+html {
+    color: white;
+    background-color: black;
+}
+
+img {
+    width: 18rem;
+    height: 10.125rem;
+}
+
+
+/*
+    Classes
+*/
+.card {
+    width: 18rem
+}
+
+.card-deck {
+    background-color: black;
+}
+
+.margin-deck {
+    margin-top: 20rem;
+}
+
+.margin-card {
+    margin: 2rem;
+}
