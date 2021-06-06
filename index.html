@@ -1,29 +1,106 @@
 <!DOCTYPE html>
-<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
 <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <title>Thomas HERVE</title>
 </head>
 <body>
-<div class="card-deck d-flex justify-content-center margin-deck">
-    <div class="card margin-card">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-            <p class="card-text">Mes projets de jeux vidéos développés avec Unity3D.</p>
-            <a href="./pages/display-games.html" class="btn btn-primary">Y aller</a>
+<div class="d-flex flex-column justify-content-center" style="background-color: var(--background-color); color: var(--text-color)">
+    <h1 class="text" style="margin-top: 8rem">
+        Recherche de poste de développeur
+        pour début septembre 2021
+    </h1>
+    <h2 class="text" style="margin-top: 2rem">
+        À propos de moi
+    </h2>
+    <hr class="line">
+    <div class="d-flex flex-row" style="margin-top: 3rem">
+        <div style="margin-left: 30%">
+            <img style="width: 13rem" src="img/photo.jpg">
+        </div>
+        <div class="description" style="margin-left: 2rem">
+            <p>Thomas Hervé</p>
+            <p>Etudiant en Master 2 d'informatique à l'université Grenoble Alpes</p>
+            <p>Alternant chez RoseauTechnologies</p>
+            <p><i class="fa fa-envelope"></i></i> Mail: therve38@gmail.com</p>
+            <p><i class="fa fa-linkedin"></i></i> <a href="https://www.linkedin.com/in/thomas-herve-4a5458168/"
+                                                     style="text-decoration: none;">  Mon linkedin</a></p>
         </div>
     </div>
-    <div class="card margin-card">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-            <p class="card-text">Mes autres projets (Site web, bots...).</p>
-            <a href="./pages/display-others.html" class="btn btn-primary">Y aller</a>
-        </div>
-    </div>
-</div>
+    <hr class="line" style="margin-top: 3rem">
+    <h2 class="text" style="margin-top: 2rem">Experiences professionel</h2>
+    <br>
+    <div class="d-flex flex-column justify-content-around">
+        <div class="d-flex flex-row justify-content-sm-around">
+            <div>
+                <h2 class="text">Stage de M1 à RoseauTechnologies</h2>
+                <p class="text">Stage de mai 2020 à aout 2020
+                Réalisation d'outils internes en python et d'un projet de générateur de rapports
+                </p>
 
+            </div>
+            <div>
+                <h2 class="text">Alternance de M2 à RoseauTechnologies</h2>
+                <p class="text">Alternance de septembre 2020 à aout 2021
+                    Réalistation d'outils internes en python, développement d'un serveur
+                    back-end en Django et d'un front end en React
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="d-flex flex-row justify-content-sm-around">
+            <div>
+                <h2 class="text">Stage de L2 à Inria</h2>
+                <p class="text">Développement d'un outil pedagogique d'apprentissage du debugging.
+                Développement d'une plateforme en ligne d'exercices pour des élèves de L2 informatique
+                </p>
+            </div>
+            <div>
+                <h2 class="text">Stage de L3 à Inria</h2>
+                <p class="text">Refonte et amelioration du site d'exercices pour les éleves de L2
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr class="line" style="margin-top: 3rem">
+    <h2 class="text" style="margin-top: 2rem">Projets personnel</h2>
+    <div class="card-deck d-flex justify-content-center margin-deck">
+        <a href="./pages/display-games.html">
+            <div class="card margin-card container-img-zoom-hover">
+                <div class="img-zoom">
+                    <img class="img-card" src="img/unity-logo.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Mes projets de jeux vidéos développés avec Unity3D.</p>
+                </div>
+            </div>
+        </a>
+        <a href="./pages/display-others.html">
+            <div class="card margin-card container-img-zoom-hover">
+                <div class="img-zoom">
+                    <img class="img-card" src="img/web.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Mes autres projets (Site web, bots...).</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <hr class="line" style="margin-top: 3rem">
+    <h2 class="text" style="margin-top: 2rem">Compétences</h2>
+    <ul>
+        <br>
+        <li><b>Développement logiciel</b>: C, Java, Python, C#, Javascript</li>
+        <li><b>DevOps</b>: Docker, Git, AWS, Google Cloud</li>
+        <li><b>Framework</b>: Angular, React, Django, Unity3D</li>
+        <li><b>Langues</b>: Anglais B2: lu, écrit, parlé</li>
+    </ul>
+    <br>
+</div>
 </body>
 </html>

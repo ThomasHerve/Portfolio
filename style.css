@@ -1,16 +1,46 @@
 /*
+    Variables
+*/
+:root {
+    --text-color: white;
+    --background-color: black;
+    --img-zoom: 1.4;
+}
+
+/*
     Global rules
 */
 html {
-    color: white;
-    background-color: black;
+    --text-color: var(--text-color);
+    background-color: var(--background-color);
 }
 
-img {
-    width: 18rem;
-    height: 10.125rem;
+p, h1, h2 {
+    white-space: pre-line;
 }
 
+hr.line {
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+hr:after {
+    background: #fff;
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+
+ul {
+    margin-left: 33%;
+}
+
+li {
+    font-size: 25px;
+}
 
 /*
     Classes
@@ -19,14 +49,69 @@ img {
     width: 18rem
 }
 
+.img-card {
+    width: 17.9rem;
+    height: 10.125rem;
+}
+
 .card-deck {
-    background-color: black;
+    background-color: var(--background-color);
+}
+
+.card-deck a {
+    text-decoration: none;
+    color: black;
+}
+
+.card-deck a:hover {
+    text-decoration: none;
+    color: black;
 }
 
 .margin-deck {
-    margin-top: 20rem;
+    margin-top: 5rem;
 }
 
 .margin-card {
     margin: 2rem;
+}
+
+.shadow-hover {
+    box-shadow: 1px 1px;
+}
+
+.text {
+    text-align: center;
+}
+
+.description p {
+    font-size: 20px;
+}
+
+/* Img zoom */
+
+.container-img-zoom-hover .img-zoom {
+    overflow: hidden;
+    position: relative;
+}
+
+.container-img-zoom-hover .img-zoom img {
+    max-width: 100%;
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.container-img-zoom-hover .img-zoom * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container-img-zoom-hover:hover .img-zoom img {
+    -moz-transform: scale(var(--img-zoom));
+    -webkit-transform: scale(var(--img-zoom));
+    transform: scale(var(--img-zoom));
 }
