@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" type="text/css" href="../style.css" media="screen" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Mes projets</title>
+    <style>
+        .card-body {
+            height: 20rem;
+        }
+    </style>
 </head>
 <body>
-J'afficherais mes autres projets
+<nav class="navbar bg-dark">
+    <a class="navbar-brand" href="../index.html" style="margin-left: 2rem"><i class="fa fa-home"></i></i></a>
+</nav>
+<div class="d-flex flex-column justify-content-center"
+     style="background-color: var(--background-color); color: var(--text-color)">
+
+    <h1 class="text" style="margin-top: 3rem">
+        Je vous présente ici quelque projets autour du web.
+    </h1>
+    <div class="card-deck d-flex justify-content-center margin-deck display-resp">
+        <a href="http://im2ag-appolab.u-ga.fr/AppoLab/">
+            <div class="card margin-card container-img-zoom-hover">
+                <div class="img-zoom">
+                    <img class="img-card" src="../img/others/appolab/img1.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <p class="card-text">Developper dans le cadre de plusieurs stages, Appolab est une plateforme permettant de resoudre des exercices de programmation,
+                            et permet aux eleves de suivre des scénario de plusieurs exercices qui se debloquent au fur et à mesure. Seul les étudiants peuvent obtenir un compte,
+                            vous ne pourrez pas donc voir une grosse partie du projet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://e-braire.herokuapp.com/">
+            <div class="card margin-card container-img-zoom-hover">
+                <div class="img-zoom">
+                    <img class="img-card" src="../img/others/ebraire/img1.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                    <div >
+                        <p class="card-text">Site fictif d'e-commerce, dans le cadre de l'apprentissage de JHipster, Java spring et Angular.
+                            L'équipe était composé de 4 étudiants sur une durée d'un mois.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://github.com/ThomasHerve/ADE">
+            <div class="card margin-card container-img-zoom-hover">
+                <div class="img-zoom">
+                    <img class="img-card" src="../img/others/discord/discord-logo.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                    <div >
+                        <p class="card-text">J'ai aussi développé plusieurs bots pour le logiciel discord. Vous pouvez retrouvé le code source de l'un d'entre eux ici,
+                            son objectif était de donner aux étudiants de ma promo le lieu et l'horaire de leurs prochain cours.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <h2 class="text" style="margin-bottom: 8rem">
+        Mon <a href="https://github.com/ThomasHerve?tab=repositories">github</a>, vous pouvez y trouver mes quelques dépots publiques.
+    </h2>
+</div>
 </body>
 </html>

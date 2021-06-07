@@ -35,7 +35,8 @@ hr:after {
 }
 
 ul {
-    margin-left: 33%;
+    margin-left: 50%;
+    transform: translate(-50%, 0%)
 }
 
 li {
@@ -86,6 +87,33 @@ li {
 
 .description p {
     font-size: 20px;
+}
+
+/* Responsive */
+.display-resp {
+    flex-direction: row;
+}
+
+.display-resp-desc-cont {
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+@media only screen and (max-width: 800px) {
+    .display-resp-order {
+        flex-direction: column-reverse;
+    }
+
+    .display-resp {
+        flex-direction: column;
+        margin-left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .display-resp-img {
+        margin-bottom: 4rem;
+        transform: translate(25%, 0%);
+    }
 }
 
 /* Img zoom */
